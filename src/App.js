@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Cart from "./pages/Cart";
 import Products from "./pages/Products";
+import Error from "./pages/Error";
 
 export default function App() {
   return (
@@ -21,6 +22,9 @@ export default function App() {
             </Route>
             <Route path="/products">
                 <Products />
+            </Route>
+            <Route path="*">
+                <Error />
             </Route>
         </Switch>
       </Router>
